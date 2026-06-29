@@ -1,0 +1,133 @@
+---
+title: "Nash Asset Management System"
+publishedAt: "2026-06-15"
+summary: "An enterprise Asset Management System developed during NashTech's Rookie-to-Engineer Program using ASP.NET Core, Next.js, Clean Architecture, and Azure DevOps."
+
+images:
+  - "/images/projects/nam/nam-cover.png"
+
+team:
+  - name: "NashTech Rookie-to-Engineer Team"
+    role: "Software Engineer"
+    avatar: "/images/logos/nashtech-logo.png"
+    linkedIn: "https://www.linkedin.com/company/nashtech-global/"
+
+link: "https://github.com/phongnguyend/Rookies2026Batch9Net1"
+---
+
+## Overview
+
+The Nash Asset Management System is an enterprise web application developed during NashTech's Rookie-to-Engineer Program. The platform helps organizations manage company assets, user accounts, assignments, return requests, and reporting through dedicated Admin and Staff portals.
+
+Working as part of a six-developer Agile Scrum team, I contributed to both backend and frontend development while following enterprise software engineering practices such as Clean Architecture, CQRS, unit testing, Azure DevOps workflows, and CI/CD.
+
+## System Architecture
+
+The application follows a full-stack architecture consisting of a Next.js frontend, an ASP.NET Core backend, SQL Server, and containerized deployment with Docker.
+
+GitHub Actions and Azure Pipelines automate the CI/CD workflow, while Docker containers provide a consistent development and deployment environment.
+
+![System Architecture](/images/projects/nam/nam-architecture.png)
+
+## Key Features
+
+- **Authentication & Authorization** with role-based access control.
+- **User Management** for administrators.
+- **Asset Management** including create, update, delete, and asset lifecycle tracking.
+- **Assignment Management** for allocating company assets to employees.
+- **Return Request Workflow** supporting approval and completion processes.
+- **Reporting Dashboard** with data export functionality.
+- **Responsive Admin & Staff Portals** built with Next.js.
+
+## Business Workflow
+
+The system manages the complete lifecycle of company assets — from asset registration and assignment to return requests and reporting.
+
+A typical workflow includes:
+
+- Administrator creates assets.
+- Assets are assigned to employees.
+- Staff manage assigned assets.
+- Return requests are submitted and approved.
+- Reports provide real-time asset statistics.
+
+![Asset Management Workflow](/images/projects/nam/nam-home-page.png)
+
+## My Contributions
+
+### Backend Development
+
+- Developed RESTful APIs using ASP.NET Core and Entity Framework Core.
+- Implemented business workflows for authentication, user management, asset management, assignments, return requests, and reporting.
+- Applied Clean Architecture and CQRS with MediatR to build maintainable and testable business logic.
+- Wrote unit tests using xUnit and Moq to validate business rules and improve code reliability.
+- Participated in code reviews, pull requests, sprint planning, and feature discussions through Azure DevOps.
+
+### Frontend Development
+
+- Built and maintained management pages using Next.js, React, TypeScript, and Redux Toolkit.
+- Developed reusable components, form validation, filtering, pagination, authentication flows, and responsive layouts.
+- Integrated frontend pages with backend APIs using RTK Query.
+- Worked with React Hook Form and Zod to build robust and user-friendly forms.
+- Collaborated closely with backend developers and QA engineers to deliver complete end-to-end features.
+
+## Technologies Used
+
+### Backend
+
+- ASP.NET Core
+- C#
+- Entity Framework Core
+- Clean Architecture
+- CQRS
+- MediatR
+- FluentValidation
+- SQL Server
+- SignalR
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Redux Toolkit
+- RTK Query
+- React Hook Form
+- Zod
+- Tailwind CSS
+- DaisyUI
+
+### Development Tools
+
+- Azure DevOps
+- Azure Pipelines
+- Docker
+- Git Flow
+- Swagger
+- Postman
+- xUnit
+- Moq
+
+## Database Design
+
+The platform manages several interconnected business entities, including users, assets, assignments, return requests, categories, and locations.
+
+Designing the database required carefully modeling relationships between these entities while supporting asset lifecycle management, reporting, and authorization.
+
+![Database Design](/images/projects/nam/nam-erd.png)
+
+## Challenges and Learnings
+
+This project was my first experience working on a large-scale enterprise application within a professional software engineering environment.
+
+One of the biggest challenges was implementing business workflows that involved multiple entities and strict business rules while keeping the codebase maintainable. Applying Clean Architecture and CQRS helped separate responsibilities, making features easier to develop, test, and maintain.
+
+Another valuable experience was contributing across both backend and frontend. Building APIs with ASP.NET Core while integrating them into a Next.js application gave me a better understanding of end-to-end feature development and cross-team collaboration.
+
+Through this project, I also strengthened my skills in Agile development, code reviews, unit testing, Azure DevOps, and CI/CD practices.
+
+## Outcome
+
+The Nash Asset Management System successfully delivered a complete enterprise solution supporting asset management, user administration, assignments, return requests, and reporting for both administrators and staff.
+
+More importantly, the project gave me hands-on experience developing production-style software within an Agile team, following modern engineering practices from feature implementation and testing to code reviews and release demonstrations. It remains the project that best represents my growth as a backend engineer while also demonstrating practical full-stack development experience with React and Next.js.

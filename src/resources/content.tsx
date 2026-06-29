@@ -2,21 +2,21 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Nguyen",
+  lastName: "Huy",
+  name: `Nguyen Vu Truong Huy`,
+  role: "Software Developer (.NET Backend)",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-  locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
+  email: "nguyenvutruonghuy112@gmail.com",
+  location: "Asia/Ho_Chi_Minh", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Vietnamese", "English"], // optional: Leave the array empty if you don't want to display languages
+  locale: "vi-VN", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: `Meet ${person.name}, a .NET Backend Software Engineer passionate about building scalable enterprise applications.`,
 };
 
 const social: Social = [
@@ -26,27 +26,27 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/truonghuy2490",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/truonghuy2409/",
     essential: true,
   },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
-  },
+  // {
+  //   name: "Instagram",
+  //   icon: "instagram",
+  //   link: "https://www.instagram.com/once_ui/",
+  //   essential: false,
+  // },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  //   essential: true,
+  // },
   {
     name: "Email",
     icon: "email",
@@ -59,11 +59,11 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: "${person.name} | .NET Backend Developer",
+  description: "Portfolio showcasing enterprise backend projects, ASP.NET Core development, React/Next.js applications, and software engineering experience.",
+  headline: <>Learning, building, and improving every day.</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -77,8 +77,12 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      I'm <strong>{person.lastName}</strong>, a{" "}
+      <strong>.NET Backend Engineer</strong> based in Ho Chi Minh City, Vietnam.
+      I build scalable web applications with ASP.NET Core while also having
+      hands-on experience with React and Next.js. Currently, I'm part of
+      NashTech's Rookie-to-Engineer Program, where I develop enterprise software
+      and continuously grow as a software engineer.
     </>
   ),
 };
@@ -96,7 +100,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -104,9 +108,12 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges
-        into simple, elegant design solutions. Their work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        {person.lastName} is a software engineer based in Ho Chi Minh City, Vietnam,
+        specializing in .NET backend development. He has experience building enterprise
+        applications with ASP.NET Core, Entity Framework Core, SQL Server, PostgreSQL,
+        and Clean Architecture. Passionate about backend engineering, he enjoys solving
+        complex business problems, writing maintainable code, and continuously improving
+        through Agile development, code reviews, and modern engineering practices.
       </>
     ),
   },
@@ -114,42 +121,90 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      // {
+      //   company: "FLY",
+      //   timeframe: "2022 - Present",
+      //   role: "Senior Design Engineer",
+      //   achievements: [
+      //     <>
+      //       Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
+      //       engagement and 30% faster load times.
+      //     </>,
+      //     <>
+      //       Spearheaded the integration of AI tools into design workflows, enabling designers to
+      //       iterate 50% faster.
+      //     </>,
+      //   ],
+      //   images: [
+      //     // optional: leave the array empty if you don't want to display images
+      //     {
+      //       src: "/images/projects/project-01/cover-01.jpg",
+      //       alt: "Once UI Project",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "NashTech",
+        timeframe: "Apr 2026 - Present",
+        role: "Software Engineer (Rookie-to-Engineer Program)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed backend features for an enterprise Asset Management System using
+            ASP.NET Core, Clean Architecture, CQRS, Entity Framework Core, and SQL Server.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built and maintained RESTful APIs for authentication, user management, assets,
+            assignments, return requests, and reporting while collaborating in a 6-developer
+            Agile Scrum team.
+          </>,
+          <>
+            Wrote unit tests with xUnit and Moq, participated in code reviews, managed pull
+            requests with Azure DevOps, and worked with Docker and Git Flow throughout the
+            development lifecycle.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
+
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "SPLUS Software",
+        timeframe: "Oct 2025 - Apr 2026",
+        role: "Fresher Backend Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Contributed to the Engineering Management System (EMS) project for JGC Holdings
+            Corporation using ASP.NET Core, Entity Framework Core, SQL Server, and C#.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implemented backend APIs, business logic, and data access layers while supporting
+            feature development, bug fixing, and performance improvements.
+          </>,
+          <>
+            Collaborated with senior engineers to improve code quality, database design, and
+            enterprise application workflows.
+          </>,
+        ],
+        images: [],
+      },
+
+      {
+        company: "FPT Software",
+        timeframe: "Jan 2024 - Apr 2024",
+        role: "Internship Trainee",
+        achievements: [
+          <>
+            Assisted in developing backend features for the Fresher Academy Management System
+            (FAMS) using ASP.NET technologies.
+          </>,
+          <>
+            Supported API implementation, database operations, debugging, and software testing
+            while learning enterprise development practices.
+          </>,
+          <>
+            Collaborated with mentors and teammates in a professional software development
+            environment to strengthen backend engineering fundamentals.
           </>,
         ],
         images: [],
@@ -157,78 +212,135 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education & Certifications",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "FPT University",
+        description: (
+          <>
+            Bachelor of Engineering in Software Engineering (2022 – 2025).
+            Focused on software engineering principles, object-oriented programming,
+            databases, web development, software architecture, and Agile development.
+          </>
+        ),
+      },
+      // Wonder if cert was counted or not ?
+      {
+        name: "Microsoft Learn",
+        description: (
+          <>
+            Microsoft Certified: Azure Fundamentals (AZ-900).
+            Gained knowledge of cloud computing concepts, Azure services, security,
+            networking, governance, and cloud architecture fundamentals.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Anthropic Academy",
+        description: (
+          <>
+            Completed Claude Code 101, Claude Code in Action, and Introduction to
+            Subagents, focusing on AI-assisted software development, agentic coding
+            workflows, and developer productivity.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: ".NET Backend Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Experienced in building RESTful APIs and backend services using ASP.NET Core,
+            Entity Framework Core, and Clean Architecture. Comfortable implementing
+            authentication, business logic, and enterprise application features.
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "C#", icon: "csharp" },
+          { name: ".NET", icon: "dotnet" },
+          { name: "ASP.NET Core", icon: "dotnet" },
+          { name: "ASP.NET Identity", icon: "Identity" },
+          { name: "Entity Framework Core", icon: "database" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [], 
       },
+
       {
-        title: "Next.js",
+        title: "Frontend Development",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Comfortable building modern web interfaces with React.js and Next.js.
+            Experienced integrating REST APIs, building forms, implementing CRUD
+            features, authentication flows, and responsive UI while collaborating
+            closely with backend development.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "React", icon: "react" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "Tailwind CSS", icon: "tailwindcss" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+
+      {
+        title: "Database & API Development",
+        description: (
+          <>
+            Familiar with designing relational databases, developing secure RESTful
+            APIs, and working with SQL Server and PostgreSQL for enterprise
+            applications.
+          </>
+        ),
+        tags: [
+          { name: "SQL Server", icon: "microsoft" },
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "REST API", icon: "globe" },
+          { name: "Swagger", icon: "swagger" },
         ],
+        images: [],
+      },
+
+      {
+        title: "Development Workflow",
+        description: (
+          <>
+            Experienced working in Agile Scrum teams using Git Flow, Azure DevOps,
+            Docker, pull requests, code reviews, and unit testing as part of daily
+            development.
+          </>
+        ),
+        tags: [
+          { name: "Azure DevOps", icon: "azure" },
+          { name: "Docker", icon: "docker" },
+          { name: "Git", icon: "git" },
+          { name: "xUnit", icon: "code" },
+        ],
+        images: [],
+      },
+      
+      {
+        title: "AI-Assisted Development",
+        description: (
+          <>
+            Use Claude Code, GitHub Copilot, and ChatGPT to improve development
+            productivity, explore solutions, and streamline everyday engineering
+            tasks while maintaining code quality.
+          </>
+        ),
+        tags: [
+          { name: "Claude Code", icon: "claude" },
+          { name: "GitHub Copilot", icon: "github" },
+          { name: "ChatGPT", icon: "openai" },
+        ],
+        images: [],
       },
     ],
   },
