@@ -275,6 +275,17 @@ export default function About() {
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
+                    {institution.certificateLink && (
+                      <Button
+                        href={institution.certificateLink}
+                        target="_blank"
+                        prefixIcon="externalLink"
+                        size="s"
+                        variant="secondary"
+                      >
+                        View Certificate
+                      </Button>
+                    )}
                   </Column>
                 ))}
               </Column>
