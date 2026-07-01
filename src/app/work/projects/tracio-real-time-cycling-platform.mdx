@@ -1,0 +1,158 @@
+---
+title: "Tracio – GPS Cycling Tracking Platform"
+publishedAt: "2025-08-10"
+summary: "A real-time cycling social platform built with ASP.NET Core, SignalR, gRPC, RabbitMQ, Redis, and modern distributed backend technologies."
+
+images:
+  - "/images/projects/tracio/tracio-cover.png"
+  - "/images/projects/tracio/route-detail.png"
+  - "/images/projects/tracio/tracio-architecture.png"
+
+team:
+  - name: "FPT University Capstone Team"
+    role: "Backend Developer"
+    avatar: "/images/logos/fpt-logo.png"
+    linkedIn: "https://docs.google.com/document/d/1Pqln6RkGFmCqIXcAX7-nMsV0y3k_GbyM/edit?usp=sharing&ouid=103091674841935656875&rtpof=true&sd=true"
+
+
+link: "https://gitlab.com/capstone6701410/Tracio_BE"
+---
+
+## Overview
+
+Tracio is a real-time social platform designed for cyclists to track rides, share routes, publish cycling experiences, join challenges, and connect with other riders.
+
+The platform combines GPS ride tracking, route sharing, community blogs, user profiles, challenges, achievements, rankings, and notifications into one cycling-focused ecosystem.
+
+As part of a four-member capstone team at FPT University, I worked as a Backend Developer, focusing on real-time communication, backend services, distributed processing, third-party integrations, and performance optimization.
+
+## Product Showcase
+
+### Ride Tracking
+
+Tracio allows cyclists to record live rides with GPS-based route tracking, distance, duration, speed, average speed, and elevation gain.
+
+![Live Ride Tracking](/images/projects/tracio/tracking-4.jpg)
+![Live Ride Tracking](/images/projects/tracio/tracking-3.jpg)
+![Live Ride Tracking](/images/projects/tracio/tracking.jpg)
+
+![Ride Completion](/images/projects/tracio/route-detail-2.png)
+
+### Route Details
+
+After completing a ride, users can view route details including distance, elevation gain, moving time, average speed, maximum speed, and route visualization.
+
+![Route Detail](/images/projects/tracio/route-detail.png)
+
+### Community Feed
+
+Users can share cycling experiences through blogs and routes, interact with posts, comment, like, bookmark, and review shared routes.
+
+![Blog Feed](/images/projects/tracio/blog-feed.png)
+
+### Profile & Achievements
+
+Cyclists can view personal profiles, followers, following users, achievements, total distance, total duration, and route statistics.
+
+![User Profile](/images/projects/tracio/user-profile.jpg)
+
+### Challenge Management
+
+The platform supports cycling challenges, rewards, rankings, and admin-side challenge management.
+
+![Challenge List](/images/projects/tracio/manage-challenge-1.png)
+
+![Challenge Detail](/images/projects/tracio/manage-challenge-detail.png)
+
+## System Architecture
+
+Tracio uses a distributed backend architecture where the mobile app and web admin communicate with backend services through an API gateway.
+
+The system integrates Redis for caching, RabbitMQ for asynchronous messaging, MySQL for persistent storage, Firebase for authentication and notifications, AWS S3 for media storage, and Mapbox for map-related features.
+
+![System Architecture](/images/projects/tracio/tracio-architecture.png)
+
+## Database Design
+
+The database was designed around users, routes, blogs, reviews, reactions, media files, shops, bookings, challenges, rewards, notifications, and reports.
+
+![Database Design](/images/projects/tracio/tracio-erd.png)
+
+## Key Features
+
+- **Real-time Ride Tracking** with live GPS updates.
+- **Route Management** with distance, speed, elevation, and map visualization.
+- **Community Blog Feed** for sharing cycling experiences.
+- **Challenge & Reward System** for user engagement.
+- **Profile & Achievement Tracking** for rider progress.
+- **Admin Dashboard** for managing users, shops, reports, and challenges.
+- **Push Notifications & OTP Verification** using Firebase and ESMS.
+- **Weather & Map Integration** for route planning and ride support.
+
+## My Contributions
+
+### Backend Development
+
+- Developed backend services using ASP.NET Core Web API with Clean Architecture and MediatR.
+- Designed modular business logic to improve maintainability and scalability.
+- Built RESTful APIs supporting rides, users, challenges, blogs, achievements, and tracking features.
+- Worked with MySQL for relational data storage and backend data operations.
+
+### Real-time Communication
+
+- Built real-time ride tracking features using SignalR to allow cyclists to share live locations during group rides.
+- Implemented gRPC services for efficient location synchronization between clients and backend services.
+- Used RabbitMQ to process high-frequency GPS updates and reduce bottlenecks during tracking sessions.
+- Integrated Redis caching to improve response time for frequently accessed tracking data.
+
+### Third-party Integration
+
+- Configured Firebase Authentication and Firebase Cloud Messaging for user authentication and push notifications.
+- Integrated ESMS to support SMS OTP and ZNS OTP verification.
+- Connected WeatherAPI to provide real-time weather information for cycling routes.
+- Used AWS S3 and AWS Secrets Manager for file storage and secure configuration management.
+- Worked with Elasticsearch to support search-related features.
+
+## Technologies Used
+
+- **Backend**: ASP.NET Core Web API, C#, Clean Architecture, MediatR
+- **Database**: MySQL
+- **Real-time Communication**: SignalR, gRPC
+- **Messaging & Caching**: RabbitMQ, Redis
+- **Search**: Elasticsearch
+- **Cloud & Services**: AWS S3, AWS Secrets Manager, Firebase Authentication, Firebase Cloud Messaging
+- **External APIs**: WeatherAPI, ESMS SMS OTP/ZNS OTP, Mapbox
+
+## Challenges and Learnings
+
+Tracio was one of my most technically challenging university projects because it required more than standard CRUD operations. The project introduced me to real-time communication, asynchronous messaging, caching, and distributed backend design.
+
+One major challenge was handling frequent GPS updates during active ride sessions. To improve responsiveness and reduce bottlenecks, we combined SignalR for real-time communication, gRPC for efficient location synchronization, RabbitMQ for queued processing, and Redis for low-latency data access.
+
+Another challenge was designing a backend that could support multiple product areas, including route tracking, blogs, challenges, user profiles, shops, notifications, and reports, while keeping the codebase maintainable.
+
+Through this project, I learned how to design backend services for real-time applications, integrate multiple third-party services, and think more carefully about performance, scalability, and maintainability.
+
+## Outcome
+
+Tracio successfully demonstrated how modern backend technologies can be combined to build a responsive, real-time social platform for cyclists.
+
+The project strengthened my understanding of ASP.NET Core backend development, real-time systems, asynchronous messaging, caching, third-party service integration, and distributed backend architecture. It also prepared me for enterprise software development by giving me hands-on experience with more advanced backend patterns beyond traditional CRUD systems.
+
+## Product Showcase
+
+Tracio provides a complete cycling experience including live ride tracking,
+route sharing, community interaction, challenges, and achievements.
+
+<video
+  controls
+  muted
+  preload="metadata"
+  width="100%"
+  style={{ borderRadius: "12px", marginBottom: "24px" }}
+>
+  <source src="/images/projects/tracio/route-detail-vid.mp4" type="video/mp4" />
+</video>
+
+
+![Ride Completion](/images/projects/tracio/route-detail-1.png)
