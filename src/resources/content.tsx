@@ -59,7 +59,7 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: "${person.name} | .NET Backend Developer",
+  title: "Nguyen Vu Truong Huy | .NET Backend Developer",
   description: "Portfolio showcasing enterprise backend projects, ASP.NET Core development, React/Next.js applications, and software engineering experience.",
   headline: <>Learning, building, and improving every day.</>,
   featured: {
@@ -121,30 +121,6 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
-      // {
-      //   company: "FLY",
-      //   timeframe: "2022 - Present",
-      //   role: "Senior Design Engineer",
-      //   achievements: [
-      //     <>
-      //       Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-      //       engagement and 30% faster load times.
-      //     </>,
-      //     <>
-      //       Spearheaded the integration of AI tools into design workflows, enabling designers to
-      //       iterate 50% faster.
-      //     </>,
-      //   ],
-      //   images: [
-      //     // optional: leave the array empty if you don't want to display images
-      //     {
-      //       src: "/images/projects/project-01/cover-01.jpg",
-      //       alt: "Once UI Project",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //   ],
-      // },
       {
         company: "NashTech",
         timeframe: "Apr 2026 - Present",
@@ -225,7 +201,6 @@ const about: About = {
           </>
         ),
       },
-      // Wonder if cert was counted or not ?
       {
         name: "Microsoft Learn",
         description: (
@@ -235,6 +210,8 @@ const about: About = {
             networking, governance, and cloud architecture fundamentals.
           </>
         ),
+        certificateLink: "https://learn.microsoft.com/en-us/users/nguyenvutruonghuy-4952/credentials/c1a69a893a09aa6a", // AZ-900 credential URL
+        certificateImage: "/images/certs/az-900.png",
       },
       {
         name: "Anthropic Academy",
@@ -245,6 +222,8 @@ const about: About = {
             workflows, and developer productivity.
           </>
         ),
+        certificateLink: "https://verify.skilljar.com/c/abm92m2sd6ax", // Anthropic verification URL
+        certificateImage: "/images/certs/claude.png",
       },
     ],
   },
@@ -372,43 +351,156 @@ const gallery: Gallery = {
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
+    // DEV CAFE
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/dev-cafe-1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/dev-cafe-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/dev-cafe-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/dev-cafe-4.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/dev-cafe-5.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/dev-cafe-6.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/dev-cafe-7.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    // DEV CAFE
+    // ---
+    // Nashtech football
+    {
+      src: "/images/gallery/football-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/football-vertical-1.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "/images/gallery/football-2.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/football-vertical-2.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/football-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/football-vertical-3.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/gallery/football-4.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/gallery/football-5.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/football-6.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/football-7.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    // Nashtech football
+    // ---
+    // Team Dev anh Phong va Nam 
+    {
+      src: "/images/gallery/team-anh-NnP-final.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/team-anh-NnP-start.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    // Team Dev anh Phong va Nam 
+    // ---
+    // Team Dev Rookie .NET
+    {
+      src: "/images/gallery/tean-dev-Phong-1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/tean-dev-Phong-2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/tean-dev-Phong-3.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/team-dev-NET-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/team-dev-NET-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/team-dev-NET-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/team-dev-NET-0.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    // Team Dev Rookie .NET
+    // ---
+    // Splus
+    {
+      src: "/images/gallery/splus-0.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/splus-1.jpg",
       alt: "image",
       orientation: "vertical",
     },
