@@ -225,6 +225,19 @@ const about: About = {
         certificateLink: "https://verify.skilljar.com/c/abm92m2sd6ax", // Anthropic verification URL
         certificateImage: "/images/certs/claude.png",
       },
+      {
+        name: "NashTech Vietnam",
+        description: (
+          <>
+            Successfully completed the <strong>Rookie2Engineer 2026</strong> training
+            program, covering ASP.NET Core, C#, ReactJS, SQL, Unit Testing, Azure
+            Fundamentals, and real-world project development. The program also
+            included professional workplace communication, teamwork, problem-solving,
+            and technical English for software engineers.
+          </>
+        ),
+        certificateLink: "https://res.cloudinary.com/dtcagmbih/image/upload/v1782906066/cert-nash_yfn7eb.jpg"
+      },
     ],
   },
   technical: {
